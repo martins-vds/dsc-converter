@@ -1,0 +1,25 @@
+# PowerShell artifacts
+*.mof
+*.log
+*.tmp
+
+# Output files
+output/
+*.json
+!examples/sample-output.json
+
+# Temporary files
+tmp/
+temp/
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS files
+.DS_Store
+Thumbs.db
