@@ -6,6 +6,7 @@
 # Output files
 output/
 *.json
+!examples/sample-output.json
 
 # Temporary files
 tmp/

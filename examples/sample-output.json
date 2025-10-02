@@ -1,0 +1,50 @@
+{
+  "ConfigurationName": "SimpleService",
+  "GeneratedDate": "2025-01-02T19:30:00.0000000Z",
+  "Nodes": [
+    {
+      "NodeName": "localhost",
+      "MofContent": "/*\n@TargetNode='localhost'\n@GeneratedBy=Administrator\n@GenerationDate=01/02/2025 19:30:00\n@GenerationHost=DESKTOP-ABC123\n*/\n\ninstance of MSFT_ServiceResource as $MSFT_ServiceResource1ref\n{\n    ResourceID = \"[Service]Spooler\";\n    Name = \"Spooler\";\n    StartupType = \"Automatic\";\n    State = \"Running\";\n    SourceInfo = \"::6::9::Service\";\n    ModuleName = \"PSDesiredStateConfiguration\";\n    ModuleVersion = \"1.0\";\n    ConfigurationName = \"SimpleService\";\n};\n\ninstance of MSFT_ServiceResource as $MSFT_ServiceResource2ref\n{\n    ResourceID = \"[Service]BITS\";\n    Name = \"BITS\";\n    StartupType = \"Automatic\";\n    State = \"Running\";\n    SourceInfo = \"::12::9::Service\";\n    ModuleName = \"PSDesiredStateConfiguration\";\n    ModuleVersion = \"1.0\";\n    ConfigurationName = \"SimpleService\";\n};\n\ninstance of OMI_ConfigurationDocument\n{\n    Version=\"2.0.0\";\n    MinimumCompatibleVersion = \"1.0.0\";\n    CompatibleVersionAdditionalProperties= {\"Omi_BaseResource:ConfigurationName\"};\n    Author=\"Administrator\";\n    GenerationDate=\"01/02/2025 19:30:00\";\n    GenerationHost=\"DESKTOP-ABC123\";\n    Name=\"SimpleService\";\n};",
+      "Resources": [
+        {
+          "ResourceType": "MSFT_ServiceResource",
+          "Properties": {
+            "ResourceID": "[Service]Spooler",
+            "Name": "Spooler",
+            "StartupType": "Automatic",
+            "State": "Running",
+            "SourceInfo": "::6::9::Service",
+            "ModuleName": "PSDesiredStateConfiguration",
+            "ModuleVersion": "1.0",
+            "ConfigurationName": "SimpleService"
+          }
+        },
+        {
+          "ResourceType": "MSFT_ServiceResource",
+          "Properties": {
+            "ResourceID": "[Service]BITS",
+            "Name": "BITS",
+            "StartupType": "Automatic",
+            "State": "Running",
+            "SourceInfo": "::12::9::Service",
+            "ModuleName": "PSDesiredStateConfiguration",
+            "ModuleVersion": "1.0",
+            "ConfigurationName": "SimpleService"
+          }
+        },
+        {
+          "ResourceType": "OMI_ConfigurationDocument",
+          "Properties": {
+            "Version": "2.0.0",
+            "MinimumCompatibleVersion": "1.0.0",
+            "CompatibleVersionAdditionalProperties": "{\"Omi_BaseResource:ConfigurationName\"}",
+            "Author": "Administrator",
+            "GenerationDate": "01/02/2025 19:30:00",
+            "GenerationHost": "DESKTOP-ABC123",
+            "Name": "SimpleService"
+          }
+        }
+      ]
+    }
+  ]
+}
